@@ -1,0 +1,78 @@
+:root {
+  --color-1: #fff;
+  --family-main: "Open Sans", sans-serif;
+  --family-bold: "Bebas Neue", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--family-main);
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--color-1);
+  line-height: 1.6;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+div,
+p,
+input,
+button,
+form,
+span,
+a,
+ul,
+li {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+hr {
+  border: 0;
+  background-color: #e5e5e5;
+  height: 1px;
+  display: block;
+  width: 100%;
+  margin: 40px 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1300px;
+}
+
+.section {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: url("img/intro/intro.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}

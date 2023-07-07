@@ -1,0 +1,165 @@
+@import url(default.css);
+
+:root {
+  --color-1: #fff;
+  --family-main: "Open Sans", sans-serif;
+  --family-bold: "Bebas Neue", sans-serif;
+}
+
+/* intro */
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  color: #fff;
+}
+
+.nav {
+  z-index: 1;
+  height: 20%;
+}
+
+nav ul li {
+  margin-right: 50px;
+  letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.block-container {
+  height: 6rem;
+  display: flex;
+  align-items: center;
+}
+
+.hover-animate {
+  position: relative;
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.hover-animate::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-1);
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.hover-animate:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.lang::after {
+  content: "";
+  height: 35px;
+  width: 1px;
+  transform: translate(15px, -5px);
+  background-color: #c9c9c9;
+  position: absolute;
+}
+
+.lang {
+  margin-right: 30px;
+}
+
+.fa-xbox {
+  margin-right: 15px;
+  font-size: 30px;
+  color: #ffb548;
+  transition: color 0.2s ease-out;
+}
+
+.fa-steam {
+  font-size: 30px;
+  color: #ffb548;
+  transition: color 0.2s ease-out;
+}
+
+.fa-xbox:hover {
+  color: #107b10;
+}
+
+.fa-steam:hover {
+  color: #000000;
+}
+
+.main {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: var(--family-bold);
+  letter-spacing: 10px;
+  transform: translateY(-50px);
+}
+
+.main-header {
+  font-size: 120px;
+  line-height: 1em;
+}
+
+.main-title {
+  font-size: 35px;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 15px;
+  border: none;
+  font: inherit;
+  color: #000;
+  font-family: var(--family-main);
+  font-weight: bold;
+  font-size: 13px;
+  border-radius: 5px;
+  background: linear-gradient(to bottom, #ffb548, #f3af34);
+  cursor: pointer;
+}
+
+.btn-main {
+  display: flex;
+}
+
+.btn-main-header {
+  margin-right: 30px;
+}
+
+.btn-main-header::after {
+  content: "";
+  width: 1px;
+  height: 25px;
+  background-color: #000;
+  position: absolute;
+  transform: translateX(15px);
+}
+
+.main-story {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  font-size: 15px;
+  animation: 2s infinite alternate story-animate;
+}
+
+@keyframes story-animate {
+  from {
+    transform: translateY(-20px);
+  }
+
+  to {
+    transform: translateY(5px);
+  }
+}
