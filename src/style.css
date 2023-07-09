@@ -163,3 +163,125 @@ a {
     transform: translateY(5px);
   }
 }
+
+.background-what {
+  background: url("img/what-is/whatbg.jpg") center no-repeat;
+}
+
+/* what is */
+
+.what {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--family-bold);
+}
+
+.block-what-1 {
+  width: 65%;
+  height: 100%;
+}
+
+.block-what-2 {
+  width: 35%;
+  height: 100%;
+}
+
+.what-title {
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.what-header {
+  font-size: 100px;
+  line-height: 6rem;
+  letter-spacing: 2px;
+}
+
+.what-header::after {
+  content: "";
+  position: absolute;
+  width: 920px;
+  height: 3px;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.what-info {
+  font-family: var(--family-main);
+  font-weight: normal;
+  font-size: 15px;
+  width: 40%;
+  margin-left: auto;
+  margin-top: 4rem;
+  margin-right: 2rem;
+}
+
+.what-info > b {
+  font-weight: bold;
+}
+
+.what-span::after {
+  content: "";
+  position: absolute;
+  width: 6.2rem;
+  height: 4px;
+  opacity: 0.8;
+  transform: translate(-100px, 16px);
+  background-color: #ffb548;
+}
+
+.what-img {
+  width: 450px;
+  height: 600px;
+  border-radius: 15px;
+  display: none;
+}
+
+.what-img.active {
+  display: block;
+}
+
+.what-img-place {
+  opacity: 0;
+}
+
+.what-right {
+  font-size: 30px;
+  position: absolute;
+  right: 15rem;
+  top: 150%;
+  transition: all 0.2s ease-in-out;
+}
+
+.what-right:hover {
+  color: #56afee;
+  filter: blur(0.5px) drop-shadow(0 0 8px #52a0d8);
+  cursor: pointer;
+}
+
+.circles {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+.active-circle {
+  background-color: #fff;
+}
+
+.circle:hover {
+  background-color: #fff;
+}
