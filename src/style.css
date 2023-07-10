@@ -164,11 +164,11 @@ a {
   }
 }
 
+/* what is */
+
 .background-what {
   background: url("img/what-is/whatbg.jpg") center no-repeat;
 }
-
-/* what is */
 
 .what {
   display: flex;
@@ -191,6 +191,7 @@ a {
 .what-title {
   font-size: 25px;
   letter-spacing: 2px;
+  font-weight: normal;
 }
 
 .what-header {
@@ -283,5 +284,81 @@ a {
 }
 
 .circle:hover {
+  background-color: #fff;
+}
+
+/* features */
+
+.background-features {
+  background: url("img/feature/feature.jpg") center no-repeat;
+}
+
+.features-title,
+.features-header {
+  text-transform: uppercase;
+}
+
+.wrapper-features {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: auto;
+  height: 100%;
+  align-items: start;
+  justify-content: center;
+}
+
+.features-info {
+  margin-left: 2.5rem;
+  margin-top: 3rem;
+}
+
+.features-title {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  font-family: var(--family-bold);
+  font-weight: normal;
+}
+
+.features-header {
+  font-size: 6rem;
+  font-family: var(--family-bold);
+  letter-spacing: 3px;
+  line-height: 6rem;
+}
+
+.info {
+  font-family: var(--family-main);
+  font-weight: normal;
+  margin: 10px 0;
+  display: none;
+  color: #fff;
+}
+
+.active-info {
+  display: block;
+}
+
+.block {
+  color: #ffb548;
+  transition: all 0.2s ease-in-out;
+}
+
+.circle-features {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: absolute;
+  transform: translate(-2.5rem, -1.7rem);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.circle-features:hover {
+  background-color: #fff;
+}
+
+.active-features {
   background-color: #fff;
 }
