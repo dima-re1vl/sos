@@ -404,3 +404,117 @@ td {
 .system-table h1 {
   color: #ffb548;
 }
+
+/* quotes */
+
+.background-quotes {
+  background: url("img/quotes/quotes.jpg") center no-repeat;
+}
+
+.quotes-1 {
+  width: 40%;
+}
+
+.quotes-title,
+.quotes-header {
+  text-transform: uppercase;
+  font-family: var(--family-bold);
+}
+
+.quotes-title {
+  font-weight: normal;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+.quotes-header {
+  font-size: 5rem;
+  letter-spacing: 3px;
+  line-height: 5rem;
+}
+
+.quotes-info {
+  font-family: var(--family-main);
+  font-weight: normal;
+  font-size: 1rem;
+  margin: 40px 0;
+}
+
+.wrapper-quotes {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.quote {
+  background-color: #222222;
+  padding: 15px 40px 15px 15px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  width: 30rem;
+}
+
+.quote-photo {
+  border-radius: 50%;
+  margin-right: 20px;
+  filter: drop-shadow(8px 5px 0 #ffb548);
+  width: 4rem;
+}
+
+.quote-header {
+  display: flex;
+  align-items: center;
+}
+
+.quote-name {
+  text-transform: uppercase;
+  font-family: var(--family-bold);
+  font-weight: normal;
+  letter-spacing: 2px;
+  color: #ffb548;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.quote-work {
+  font-family: var(--family-main);
+  font-weight: normal;
+  font-size: 1rem;
+  color: #646464;
+}
+
+.quote-text {
+  font-family: var(--family-main);
+  font-weight: normal;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin: 20px 0 10px 0;
+}
+
+.quote-date {
+  font-family: var(--family-main);
+  font-weight: normal;
+  font-size: 0.8rem;
+  color: #646464;
+}
+
+.fa-twitter {
+  color: #646464;
+  font-size: 20px;
+  position: absolute;
+  transform: translate(400px, 10px);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.fa-twitter:hover {
+  color: #52a0d8;
+}
+
+.quote:nth-child(2) {
+  transform: translate(-120px);
+}
+
+.quote:nth-child(3) {
+  transform: translate(-50px);
+}
