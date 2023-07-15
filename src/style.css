@@ -21,7 +21,7 @@ nav ul {
 }
 
 nav ul li {
-  margin-right: 50px;
+  margin-right: 3vw;
   letter-spacing: 2px;
 }
 
@@ -106,12 +106,12 @@ a {
 }
 
 .main-header {
-  font-size: 120px;
+  font-size: 7vw;
   line-height: 1em;
 }
 
 .main-title {
-  font-size: 35px;
+  font-size: 2vw;
   letter-spacing: 5px;
   margin-bottom: 20px;
 }
@@ -123,7 +123,7 @@ a {
   color: #000;
   font-family: var(--family-main);
   font-weight: bold;
-  font-size: 13px;
+  font-size: 0.7vw;
   border-radius: 5px;
   background: linear-gradient(to bottom, #ffb548, #f3af34);
   cursor: pointer;
@@ -150,7 +150,7 @@ a {
   position: absolute;
   bottom: 20px;
   text-align: center;
-  font-size: 15px;
+  font-size: 1vw;
   animation: 2s infinite alternate story-animate;
 }
 
@@ -189,13 +189,13 @@ a {
 }
 
 .what-title {
-  font-size: 25px;
+  font-size: 1.5vw;
   letter-spacing: 2px;
   font-weight: normal;
 }
 
 .what-header {
-  font-size: 100px;
+  font-size: 5vw;
   line-height: 6rem;
   letter-spacing: 2px;
 }
@@ -212,7 +212,7 @@ a {
 .what-info {
   font-family: var(--family-main);
   font-weight: normal;
-  font-size: 15px;
+  font-size: 0.77vw;
   width: 40%;
   margin-left: auto;
   margin-top: 4rem;
@@ -234,8 +234,8 @@ a {
 }
 
 .what-img {
-  width: 450px;
-  height: 600px;
+  width: 25vw;
+  height: 60vh;
   border-radius: 15px;
   display: none;
 }
@@ -314,14 +314,14 @@ a {
 }
 
 .features-title {
-  font-size: 1.5rem;
+  font-size: 1.3vw;
   letter-spacing: 3px;
   font-family: var(--family-bold);
   font-weight: normal;
 }
 
 .features-header {
-  font-size: 6rem;
+  font-size: 5vw;
   font-family: var(--family-bold);
   letter-spacing: 3px;
   line-height: 6rem;
@@ -377,14 +377,14 @@ a {
 }
 
 .system-title {
-  font-size: 2rem;
+  font-size: 1.3vw;
   letter-spacing: 2px;
   font-weight: normal;
   margin-top: 8rem;
 }
 
 .system-header {
-  font-size: 5rem;
+  font-size: 5vw;
   letter-spacing: 3px;
   line-height: 5rem;
 }
@@ -423,12 +423,12 @@ td {
 
 .quotes-title {
   font-weight: normal;
-  font-size: 2rem;
+  font-size: 1.5vw;
   letter-spacing: 2px;
 }
 
 .quotes-header {
-  font-size: 5rem;
+  font-size: 5vw;
   letter-spacing: 3px;
   line-height: 5rem;
 }
@@ -436,7 +436,7 @@ td {
 .quotes-info {
   font-family: var(--family-main);
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 1vw;
   margin: 40px 0;
 }
 
@@ -472,21 +472,21 @@ td {
   font-weight: normal;
   letter-spacing: 2px;
   color: #ffb548;
-  font-size: 1.5rem;
+  font-size: 1.2vw;
   line-height: 1.5rem;
 }
 
 .quote-work {
   font-family: var(--family-main);
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 0.8vw;
   color: #646464;
 }
 
 .quote-text {
   font-family: var(--family-main);
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 0.8vw;
   letter-spacing: 2px;
   margin: 20px 0 10px 0;
 }
@@ -539,19 +539,19 @@ td {
 .subscribe-title {
   font-family: var(--family-bold);
   font-weight: normal;
-  font-size: 2rem;
+  font-size: 1.5vw;
   letter-spacing: 2px;
 }
 
 .subscribe-header {
   font-family: var(--family-bold);
-  font-size: 5rem;
+  font-size: 4.3vw;
   letter-spacing: 6px;
   line-height: 4rem;
 }
 
 .subscribe-text {
-  font-size: 1.2rem;
+  font-size: 1vw;
   font-family: var(--family-main);
   font-weight: normal;
   line-height: 1.7rem;
@@ -586,6 +586,10 @@ input[type="email"] {
 
 .btn-subscribe h3 {
   font-size: 14px;
+}
+
+.figure {
+  width: 25vw;
 }
 
 /* footer */
@@ -629,12 +633,471 @@ input[type="email"] {
 }
 
 .footer-copy-text {
-  font-size: 0.8rem;
+  font-size: 0.7vw;
   font-weight: normal;
   color: #646464;
 }
 
 .footer-copy-privacy {
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 0.7vw;
+}
+
+/* responsive */
+
+/*992px - 1200px*/
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 900px;
+    height: 100%;
+  }
+
+  nav {
+    font-size: 1vw;
+  }
+
+  .what-header {
+    line-height: 5vw;
+  }
+
+  .what-info {
+    width: 100%;
+    font-size: 1.2vw;
+  }
+
+  .what-span::after {
+    transform: translate(-8vw, 3vh);
+    width: 8vw;
+  }
+
+  .background {
+    background-size: 100vw;
+  }
+
+  .system-table {
+    margin: 0 auto;
+    font-size: 1vw;
+  }
+
+  .background-quotes {
+    height: 100%;
+    background-size: 150%;
+  }
+
+  .quotes-1 {
+    text-align: center;
+  }
+
+  .quotes-info {
+    margin: 10px 0 30px 0;
+  }
+
+  .wrapper-quotes {
+    flex-direction: column;
+  }
+
+  .quote {
+    width: 50vw;
+    margin-bottom: 5vh;
+  }
+
+  .btn-quotes {
+    margin: 0 auto;
+    margin-bottom: 2vh;
+  }
+
+  .background-subscribe {
+    background-size: 300% 300%;
+  }
+
+  .btn-main-header::after {
+    transform: translate(1.5vw, -0.5vh);
+    height: 4vh;
+  }
+
+  .background-subscribe {
+    background-size: 150%;
+    height: 100%;
+  }
+}
+
+/*768px - 992px*/
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 760px;
+  }
+
+  .what-header::after {
+    width: 500px;
+  }
+
+  .what-right {
+    right: 10px;
+    top: 130%;
+  }
+
+  .circles {
+    width: 75%;
+  }
+
+  .background {
+    background-size: 150%;
+  }
+
+  .wrapper-what {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .what-info {
+    margin: 30px 0;
+  }
+
+  .background-what {
+    height: 115vh;
+  }
+
+  .what {
+    padding: 0 50px;
+  }
+
+  .features-title {
+    font-size: 2vw;
+  }
+
+  .features-header {
+    line-height: 10vh;
+  }
+
+  .features-info {
+    margin-top: 20px;
+  }
+
+  .what-right {
+    top: 170%;
+    right: 30%;
+  }
+
+  .background-quotes {
+    background-size: 150% 150%;
+  }
+
+  .wrapper-quotes {
+    padding: 20px 0;
+  }
+
+  .twitter {
+    transform: translate(40vw, 2vh);
+  }
+}
+
+/*576px - 768px*/
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 576px;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    font-size: 1.5vw;
+  }
+
+  .what-header::after {
+    left: 0;
+    transform: translate(0, 2vh);
+  }
+
+  .main-header {
+    margin-top: 50px;
+  }
+
+  .block-3-main {
+    display: none;
+  }
+
+  .block {
+    font-size: 2vw;
+    margin-bottom: 2vh;
+  }
+
+  .info {
+    font-size: 2vw;
+  }
+
+  .circle-features {
+    transform: translate(-2.5vw, -6.5vh);
+  }
+
+  .system-header {
+    line-height: 10vh;
+  }
+
+  .quote {
+    width: 80vw;
+    text-align: left;
+  }
+
+  .quote:nth-child(2) {
+    transform: translate(0);
+  }
+
+  .quote:nth-child(3) {
+    transform: translate(0);
+  }
+
+  .twitter {
+    transform: translate(65vw, 2vh);
+  }
+
+  .quote-name {
+    font-size: 3vw;
+  }
+
+  .quote-work {
+    font-size: 3vw;
+  }
+
+  .quote-text {
+    font-size: 2vw;
+  }
+
+  .quotes-info {
+    font-size: 3vw;
+    width: 100%;
+    margin: 5px 0 15px 0;
+  }
+
+  .quotes-1 {
+    width: 60%;
+  }
+
+  .quotes-header {
+    line-height: 12vh;
+  }
+
+  .subscribe-text {
+    margin: 0 auto;
+    font-size: 2vw;
+    line-height: 4vh;
+    text-align: center;
+  }
+
+  .btn-subscribe {
+    font-size: 0.5vw;
+    width: 150%;
+  }
+
+  .form {
+    margin-top: 5vh;
+  }
+
+  .background {
+    background-size: 300vw 200vh;
+  }
+}
+
+/*320px - 576px*/
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 320px;
+  }
+
+  nav ul li {
+    font-size: 3vw;
+  }
+
+  .main-header {
+    font-size: 10vw;
+    letter-spacing: 5px;
+  }
+
+  .main-title {
+    letter-spacing: 2px;
+    font-size: 4vw;
+  }
+
+  .btn-main-header {
+    font-size: 3vw;
+  }
+
+  .btn-main-price {
+    font-size: 3vw;
+  }
+
+  .main-story-header {
+    font-size: 4vw;
+  }
+
+  .main-story-arrows {
+    font-size: 4vw;
+  }
+
+  .what-title {
+    font-size: 3vw;
+  }
+
+  .what-header {
+    font-size: 5vw;
+  }
+
+  .what-info {
+    font-size: 3vw;
+  }
+
+  .block-what-1 {
+    width: 100%;
+  }
+
+  .what-span::after {
+    width: 20vw;
+    transform: translate(-20vw, 3vh);
+  }
+
+  .what-img {
+    width: 50vw;
+  }
+
+  .block-what-2 {
+    width: 65%;
+  }
+
+  .what-right {
+    right: 15%;
+    top: 185%;
+  }
+
+  .circles {
+    width: 100%;
+  }
+
+  .wrapper-what {
+    padding: 15px;
+  }
+
+  .container-what {
+    height: 120vh;
+  }
+
+  .what-header::after {
+    width: 200px;
+  }
+
+  .what {
+    height: 130vh;
+  }
+
+  .background-features {
+    background-size: 200vw 120vh;
+  }
+
+  .wrapper-features {
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .features-title {
+    font-size: 4vw;
+  }
+
+  .features-header {
+    font-size: 12vw;
+  }
+
+  .block {
+    font-size: 4vw;
+  }
+
+  .info {
+    font-size: 3vw;
+  }
+
+  .circle-features {
+    transform: translate(-8vw, -6.5vh);
+  }
+
+  .system-table {
+    font-size: 3vw;
+    width: 100%;
+  }
+
+  .system-title {
+    margin-top: 20px;
+    font-size: 4vw;
+  }
+
+  .system-header {
+    font-size: 9vw;
+  }
+
+  .quotes-title {
+    font-size: 5vw;
+  }
+
+  .quotes-header {
+    line-height: 8vh;
+    font-size: 9vw;
+  }
+
+  .btn-quotes {
+    font-size: 3vw;
+  }
+
+  .quote-text {
+    font-size: 3vw;
+  }
+
+  .subscribe-title {
+    font-size: 4vw;
+  }
+
+  .subscribe-header {
+    font-size: 8vw;
+    line-height: 8vh;
+  }
+
+  .subscribe-text {
+    font-size: 3vw;
+  }
+
+  .form {
+    margin-bottom: 20px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  input[type="email"] {
+    width: 100%;
+  }
+
+  .form-a {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .btn-subscribe {
+    width: 60%;
+    margin-top: 5px;
+  }
+
+  .footer-copy-text {
+    font-size: 2vw;
+  }
+
+  .footer-copy-privacy {
+    font-size: 2vw;
+  }
 }
